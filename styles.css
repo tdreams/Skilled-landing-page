@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero,
+header {
+  position: relative;
+  overflow: hidden;
+}
+header,
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+  align-items: center;
+}
+
+.hero {
+  margin-bottom: 10rem;
+  padding-top: 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 12rem;
+  margin-bottom: 10rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+  background-color: #453385;
+  align-items: center;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.deco-rect {
+  position: absolute;
+  top: 7.4rem;
+  right: -12rem;
+  width: 58rem;
+  height: 19rem;
+  z-index: -2;
+  background: #d9d9d9;
+  transform: rotate(-47.91deg);
+  background-image: linear-gradient(#453385, #bd2e78);
+}
+
+.deco-course {
+  position: absolute;
+  top: 35rem;
+  right: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: fit-content;
+  padding: 8px 50px 20px 20px;
+  background-color: #ffff;
+  border-radius: 15px;
+  margin-right: 50px;
+  margin-bottom: 5rem;
+  box-shadow: 5px 6px 12px 1px rgba(43, 42, 42, 0.536);
+}
+
+.deco-member {
+  display: flex;
+  position: absolute;
+  top: 18rem;
+  right: 16rem;
+  text-align: start;
+  flex-direction: column;
+  width: fit-content;
+  padding: 8px 55px 20px 30px;
+  background-color: #ffff;
+  border-radius: 15px;
+  margin-right: 50px;
+  margin-bottom: 5rem;
+  box-shadow: 5px 6px 12px 1px rgba(43, 42, 42, 0.536);
+}
+
+.deco-course p,
+.deco-member p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #453385;
+}
+
+.deco-course span,
+.deco-member span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #362869;
+}
+
+#logo {
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer #logo {
+  color: #ffff;
+}
+
+.btn {
+  border-radius: 40px;
+  padding: 21px 31px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: #453385;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #bd2e78;
+}
+
+.hero h1 {
+  font-size: 6.5rem;
+  color: #453385;
+  margin-bottom: -0.5rem;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-size {
+  font-size: 2rem;
+  width: 45rem;
+  color: rgba(0, 0, 0, 0.43);
+  line-height: 1.6;
+  margin-bottom: 46px;
+}
+
+.btn-grad {
+  display: block;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 21px 31px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(#ec8472ed, #bd2e78);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-image: linear-gradient(#f1745eed, #a91863);
+}
+
+.hero-img {
+  width: 30rem;
+
+  margin-right: 15rem;
+}
+
+#first-card {
+  background-image: linear-gradient(#ec8472ed, #bd2e78);
+  color: #ffff;
+  font-weight: 600;
+}
+
+#first-card p {
+  font-size: 40.4px;
+  line-height: 1.6;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: fit-content;
+  padding: 32px 150px 70px;
+  background-color: #ffff;
+  border-radius: 15px;
+  margin-right: 50px;
+  margin-bottom: 5rem;
+  box-shadow: 5px 6px 12px 1px rgba(46, 46, 46, 0.25);
+}
+
+.card h3 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.card a {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: #bd2e78;
+  font-weight: 500;
+}
+
+.card p {
+  width: 253px;
+  font-size: 23.4px;
+  color: rgba(0, 0, 0, 0.573);
+}
+
+.margin-r {
+  margin-right: -7rem;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.absolute-position-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2rem;
+  left: 5rem;
+}
+
+.absolute-position-icons img {
+  width: 35px;
+  height: 35px;
+}
+
+.rounded-icon {
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(#ec8472ed, #bd2e78);
+  border-radius: 50%;
+}
